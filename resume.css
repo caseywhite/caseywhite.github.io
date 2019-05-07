@@ -1,0 +1,127 @@
+/* entire resume */  
+body {
+    margin: 5%;
+    font-family: Verdana, Geneva, sans-serif;
+    color:rgb(191, 191, 191);
+}
+/* entire resume */  
+
+/* headlines */   
+h1 {
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color:#033d5c;
+}
+/* headlines */ 
+
+/* indentded subhead */ 
+ul, dl {
+  margin-left: 30px;
+  padding-left: 0;
+  list-style: none;
+  line-height: 1.6em;
+  }
+/* indentded subhead */ 
+  
+/* subheads in bold */ 
+time {
+  margin-right: 10px;
+  font-weight: bold;
+  color:#efc1ba;
+}
+/* subheads in bold */ 
+
+/* wrapper around entire resume */   
+.wrapper > div {
+  padding:1em;
+}
+.wrapper {
+  display: grid;
+  grid-gap:10px;
+  grid-auto-rows: 15% auto 7%;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "h"
+    "s"
+    "m"    
+}
+ @media (min-width: 750px) {
+  .wrapper {
+    display: grid;
+    grid-gap:15px;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 10% auto;
+    grid-template-areas: 
+    "h h h h h h h h h"
+    "s s s s m m m m m";
+  }
+}
+/* wrapper around entire resume */ 
+
+/* sections */ 
+.header{
+    grid-area: h;
+}
+.sidebar {
+    grid-area: s;
+    margin-left: 40px;
+    list-style: none;
+    line-height: 1.6em;
+}
+#main {
+    grid-area: m;
+    padding-right:10%;
+    margin-left: 10%;
+    list-style: none;
+    line-height: 1.6em;
+}
+/* sections */ 
+ 
+/* logo header */  
+#name{
+  animation: color 3s infinite;
+ }
+@keyframes color{
+10%{
+  fill:rgb(191, 191, 191);
+    }
+30%{
+  fill:#033d5c;
+  }
+90%{
+  fill:#efc1ba;
+    }
+}
+.svg{
+  fill:rgb(191, 191, 191);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* logo header */  
+
+/* links */
+a{
+  color:rgb(191, 191, 191);
+  text-decoration: none;
+}
+a:hover{
+  color:rgb(191, 191, 191);
+  text-decoration: none
+}
+a:active{
+  color:rgb(191, 191, 191);
+  text-decoration: none;
+}
+a:visited{
+  color:rgb(191, 191, 191);
+  text-decoration: none;
+}
+/* links */
+
+/* image space */
+.space{
+  line-height: 12px;
+}
+/* image space */
